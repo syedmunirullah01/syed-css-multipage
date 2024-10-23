@@ -1,28 +1,81 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-    .nav__link{
-        @apply relative text-base font-medium w-fit block after:block after:content-[""] after:absolute after:h-[3px] after:bg-yellow-500 text-white after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-right 
-    }
-    .text-bg{
-        background-image: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .custom-Scrollbar::-webkit-scrollbar{
-        width: 10px;
-        height: 10px;
-    }
-    .custom-Scrollbar::-webkit-scrollbar-track{
-        background : #44028f;
-    }
-    .custom-Scrollbar::-webkit-scrollbar-thumb{
-        background: #e277fa;
-        border-radius: 4px;
-    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Components Layer */
+.nav__link {
+    position: relative;
+    font-size: 1rem; /* equivalent to text-base */
+    font-weight: 500; /* equivalent to font-medium */
+    width: fit-content;
+    display: block;
+    color: white;
+}
+
+.nav__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    background-color: #facc15; /* equivalent to bg-yellow-500 */
+    width: 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: right;
+}
+
+.nav__link:hover::after {
+    transform: scaleX(1);
+}
+
+.text-bg {
+    background-image: linear-gradient(to right, #8750f7 0%, #ffffff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom-Scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.custom-Scrollbar::-webkit-scrollbar-track {
+    background: #44028f;
+}
+
+.custom-Scrollbar::-webkit-scrollbar-thumb {
+    background: #e277fa;
+    border-radius: 4px;
+}
+
+
+#about{
+    background-color: #050709;
+    padding-top: 4rem; /* equivalent to pt-16 */
+    padding-bottom: 4rem; /* equivalent to pb-16 */
+}
+
+#contact{
+    background-color: #050709;
+}
+
+#project{
+    background-color: #050709;
+    padding-top: 4rem; /* pt-16 */
+    padding-bottom: 4rem; /* pb-16 */
+}
+
+#reviews{
+    background-color: #050709;
+    padding-top: 4rem; /* pt-16 */
+    padding-bottom: 4rem; /* pb-16 */
+}
+
+#services{
+    background-color: #050709;
+    padding-top: 4rem; /* pt-16 */
+    padding-bottom: 4rem; /* pb-16 */
+}

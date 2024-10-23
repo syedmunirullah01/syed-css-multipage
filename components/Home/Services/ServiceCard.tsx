@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import Tilt from "react-parallax-tilt"
+import Tilt from "react-parallax-tilt";
+import "./ServiceCard.css"; // Import the custom CSS
 
 type Props = {
   service: {
@@ -11,14 +12,21 @@ type Props = {
   };
 };
 
-const ServiceCard = ( {service} : Props ) => {
+const ServiceCard = ({ service }: Props) => {
   return (
-      <Tilt className="shadow-2xl p-6 rounded-lg bg-[#814ced]">
-          <Image src={`${service.icon}`} alt={service.title} width={50} height={50} />
-          <h1 className="mt-4 text-lg font-bold text-gray-100">{ service.title }</h1> 
-          <p className="mt-3 text-sm text-white text-opacity-80">{ service.description }</p>
+    <Tilt className="service-card">
+      {" "}
+      {/* Use custom class here */}
+      <Image
+        src={`${service.icon}`}
+        alt={service.title}
+        width={50}
+        height={50}
+      />
+      <h1>{service.title}</h1>
+      <p>{service.description}</p>
     </Tilt>
-  )
-}
+  );
+};
 
-export default ServiceCard
+export default ServiceCard;

@@ -1,0 +1,49 @@
+.project-container {
+    padding-top: 4rem; /* Equivalent to pt-16 */
+    padding-bottom: 4rem; /* Equivalent to pb-16 */
+    background-color: #050709; /* Equivalent to bg-[#050709] */
+}
+
+.project-heading {
+    text-align: center; /* Center the heading */
+    font-size: 2rem; /* Adjust as needed */
+    color: white; /* Adjust heading color if necessary */
+    margin: 0; /* Reset margin */
+}
+
+.project-grid {
+    width: 80%; /* Equivalent to w-[80%] */
+    margin: 2rem auto; /* Equivalent to mx-auto (horizontal margin auto) and mt-20 (top margin) */
+    display: grid; /* Create a grid layout */
+    grid-template-columns: repeat(1, 1fr); /* 1 column by default */
+    gap: 3rem; /* Equivalent to gap-12 */
+    align-items: center;  /* Equivalent to gap-12 */
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    }
+}
+
+.project-card {
+    background-color: #1e3a8a; /* Equivalent to bg-blue-950 */
+    padding: 1.5rem; /* Equivalent to p-6 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Equivalent to hover:scale-105 */
+}
+
+.project-image {
+    width: 100%; /* Make the image responsive */
+    border-radius: 0.5rem; /* Optional: add rounding to the image */
+}

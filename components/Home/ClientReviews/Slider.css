@@ -1,0 +1,11 @@
+.carousel-container {
+  position: relative;
+}
+
+.carousel-arrow {
+  cursor: pointer;
+}
+
+.carousel-item {
+  margin: 0 auto; /* Center the items */
+}

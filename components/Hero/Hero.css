@@ -1,0 +1,114 @@
+.hero-container {
+  width: 100%;
+  padding-top: 4vh;
+  height: 100vh;
+  background-color: #0f0715;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    padding-top: 12vh; /* For md:pt-[12vh] */
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 3rem; /* gap-12 */
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr; /* lg:grid-cols-2 */
+  }
+}
+
+.hero-title {
+  font-size: 1.5rem; /* text-2xl */
+  margin-bottom: 1.25rem; /* mb-5 */
+  color: #d1d5db; /* text-gray-300 */
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 1.875rem; /* md:text-3xl */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 2.25rem; /* lg:text-4xl */
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: bold;
+  line-height: normal;
+  color: white;
+}
+
+@media (min-width: 640px) {
+  .hero-subtitle {
+    font-size: 2.25rem; /* sm:text-4xl */
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-subtitle {
+    font-size: 3rem; /* md:text-5xl */
+    line-height: 3rem; /* md:leading-[3rem] */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-subtitle {
+    font-size: 3.75rem; /* lg:text-6xl */
+    line-height: 3.5rem; /* lg:leading-[3.5rem] */
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-subtitle {
+    font-size: 4.5rem; /* xl:text-7xl */
+    line-height: 4rem; /* xl:leading-[4rem] */
+  }
+}
+
+.hero-description {
+  margin-top: 1.5rem; /* mt-6 */
+  font-size: 0.875rem; /* text-sm */
+  color: white;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .hero-description {
+    font-size: 1rem; /* md:text-base */
+  }
+}
+
+.hero-image {
+  display: none;
+  margin: 0 auto;
+  border-radius: 3rem;
+  border: 3.5px solid #1e3a8a;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .hero-image {
+    display: block; /* For lg:block */
+  }
+}

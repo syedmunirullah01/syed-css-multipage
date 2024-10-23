@@ -5,7 +5,7 @@ import React from "react";
 
 const ReviewPage = () => {
   return (
-    <div className="bg-[#050709] pt-16 pb-16">
+    <div id="reviews">
       {" "}
 
       <ClientReviews />

@@ -1,8 +1,9 @@
 "use client";
 import { clientReviews } from "@/Data/data";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import "react-multi-carousel/lib/styles.css"; // Keep the original styles for carousel functionality
 import ReviewCard from "./ReviewCard";
+import "./Slider.css"; // Import the custom CSS
 
 const responsive = {
   desktop: {
@@ -24,19 +25,21 @@ const responsive = {
 
 const Slider = () => {
   return (
-    <Carousel
-      arrows={true}
-      autoPlay={true}
-      autoPlaySpeed={5000}
-      infinite={true}
-      responsive={responsive}
-    >
-      {clientReviews.map((review) => (
-        <div key={review.image}>
-          <ReviewCard review={review} />
-        </div>
-      ))}
-    </Carousel>
+    <div className="carousel-container">
+      <Carousel
+        arrows={true}
+        autoPlay={true}
+        autoPlaySpeed={5000}
+        infinite={true}
+        responsive={responsive}
+      >
+        {clientReviews.map((review) => (
+          <div className="carousel-item" key={review.image}>
+            <ReviewCard review={review} />
+          </div>
+        ))}
+      </Carousel>
+    </div>
   );
 };
 

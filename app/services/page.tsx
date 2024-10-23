@@ -4,7 +4,7 @@ import Services from "@/components/Home/Services/Services";
 
 const ServicePage = () => {
   return (
-    <div className="bg-[#050709] pt-16 pb-16">
+    <div id="services">
       {" "}
       <Services />
     </div>

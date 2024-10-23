@@ -10,7 +10,8 @@ import Blog from "./Blog/Blog";
 import Contact from "./Contact/Contact";
 import ScrollToTop from "../Helper/ScrollToTop";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
+import "./Home.css"; // Import the CSS file
 
 const Home = () => {
   useEffect(() => {
@@ -21,13 +22,15 @@ const Home = () => {
         easing: "ease",
         once: true,
         anchorPlacement: "top-bottom",
-
-      })
-    }
+      });
+    };
     initAos();
-  },[])
+  }, []);
+
   return (
-    <div className="overflow-hidden">
+    <div className="home-container">
+      {" "}
+      {/* Use the class for styling */}
       <Hero />
       <About />
       <Services />

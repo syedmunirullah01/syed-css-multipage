@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import "./ScrollToTop.css"; // Import custom CSS
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -8,7 +9,6 @@ const ScrollToTop = () => {
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 300) {
-        // Changed to window.scrollY
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -29,11 +29,11 @@ const ScrollToTop = () => {
   };
 
   return (
-    <div className="fixed bottom-4 right-4">
+    <div className="fixed-bottom-right">
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="bg-blue-900 text-white rounded-full w-12 h-12 flex items-center justify-center focus:outline-none animate-pulse"
+          className="custom-scroll-button animate-pulse"
         >
           <FaArrowUp />
         </button>

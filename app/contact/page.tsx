@@ -4,7 +4,7 @@ import Contact from "@/components/Home/Contact/Contact";
 
 const ContactPage = () => {
   return (
-    <div className="bg-[#050709] ">
+    <div id="contact">
       {" "}
       <Contact /> 
     </div>

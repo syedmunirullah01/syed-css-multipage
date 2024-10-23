@@ -1,0 +1,35 @@
+.skill-card {
+    padding: 1.5rem; /* Equivalent to p-6 */
+    cursor: pointer; /* Equivalent to cursor-pointer */
+    text-align: center; /* Center text */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    color: #6b7280; /* Equivalent to text-gray-500 */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+.skill-card:hover {
+    background-color: #1e3a8a; /* Equivalent to bg-blue-900 */
+}
+
+.skill-card img {
+    width: 80px; /* Fixed width */
+    height: 80px; /* Fixed height */
+    object-fit: cover; /* Equivalent to object-cover */
+    margin: 0 auto; /* Center image */
+}
+
+.skill-card__title {
+    font-size: 1.125rem; /* Equivalent to text-[18px] */
+    margin-top: 1rem; /* Equivalent to mt-4 */
+    color: white; /* Equivalent to text-white */
+    font-weight: 600; /* Equivalent to font-[600] */
+}
+
+.skill-card__percent {
+    background-color: black; /* Equivalent to bg-black */
+    margin-top: 1rem; /* Equivalent to mt-4 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    padding: 0.5rem; /* Equivalent to p-2 */
+    color: white; /* Equivalent to text-white */
+    opacity: 0.4; /* Equivalent to opacity-40 */
+}

@@ -1,0 +1,61 @@
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 7, 21, 0.9); /* Semi-transparent background */
+  opacity: 0;
+  transform: translateX(100%); /* Start hidden off-screen */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transition effects */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.mobile-nav-overlay.open {
+  opacity: 1; /* Show the overlay */
+  transform: translateX(0); /* Move into view */
+}
+
+.mobile-nav-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%; /* Width of the mobile nav */
+  height: 100%; /* Full height */
+  background-color: #040404; /* Background color for nav content */
+  display: flex;
+  flex-direction: column; /* Vertical layout */
+  padding-top: 2rem; /* Padding at the top */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.mobile-nav-content.open {
+  transform: translateX(0); /* Move content into view */
+}
+
+.nav-link {
+  color: white; /* Text color */
+  font-size: 20px; /* Font size */
+  margin-left: 2rem; /* Margin for spacing */
+  padding: 1rem 0; /* Padding for clickable area */
+  border-bottom: 1.5px solid white; /* Underline effect */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #7947df; /* Change color on hover */
+}
+
+.close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; /* Position close icon */
+  width: 24px; /* Icon size */
+  height: 24px; /* Icon size */
+  color: white; /* Icon color */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.close-icon.visible {
+  display: block; /* Show the close icon */
+}

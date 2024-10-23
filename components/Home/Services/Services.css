@@ -1,0 +1,32 @@
+.services-container {
+    padding-top: 4rem; /* Equivalent to pt-16 */
+    padding-bottom: 4rem; /* Equivalent to pb-16 */
+    background-color: #0f0715; /* Background color */
+}
+
+.services-grid {
+     display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Default to 1 column */
+    gap: 2.5rem; /* Equivalent to gap-10 */
+    width: 80%; /* Width equivalent to w-[80%] */
+    margin: 0 auto; /* Center the grid */
+    margin-top: 5rem;  /* Equivalent to mt-20 */
+}
+
+@media (min-width: 640px) { /* sm breakpoint */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
+    }
+}
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    }
+}
+
+@media (min-width: 1280px) { /* xl breakpoint */
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for extra-large screens */
+    }
+}

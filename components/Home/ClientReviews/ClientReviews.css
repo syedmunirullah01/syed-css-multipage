@@ -1,0 +1,17 @@
+.client-reviews-section {
+  padding-top: 4rem; /* pt-16 */
+  padding-bottom: 4rem; /* pb-16 */
+  background-color: #050709;
+}
+
+.client-reviews-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem; /* mt-20 */
+}
+
+@media (min-width: 640px) {
+  .client-reviews-container {
+    width: 80%; /* sm:w-[80%] */
+  }
+}

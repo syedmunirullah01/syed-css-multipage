@@ -1,0 +1,32 @@
+.blog-container {
+  padding-top: 4rem; /* pt-16 */
+  padding-bottom: 4rem; /* pb-16 */
+  background-color: #0f0715; /* bg-[#0f0715] */
+}
+
+.blog-heading {
+  text-align: center; /* Center the heading */
+  font-size: 2rem; /* Adjust as needed */
+  margin-bottom: 2rem; /* Space below heading */
+}
+
+.blog-grid {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem; /* mt-20 */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 1 column by default */
+  gap: 3rem; /* gap-12 */
+}
+
+@media (min-width: 768px) { /* md: */
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (min-width: 1280px) { /* xl: */
+  .blog-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on extra-large screens */
+  }
+}

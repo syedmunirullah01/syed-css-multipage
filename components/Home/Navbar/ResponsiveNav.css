@@ -1,0 +1,10 @@
+.responsive-nav {
+  position: relative; /* Context for absolute positioning if needed */
+}
+
+/* Optional: Styles for the Nav component when scrolled */
+.nav {
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Add any other specific styles for your responsive nav here */
