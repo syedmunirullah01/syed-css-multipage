@@ -125,9 +125,9 @@ ive styles */
     display: none;
   }
 
-  /* .container{
-    margin-left: 80px;
-  } */
+  .margin-left{
+    margin-left: 1px;
+  }
   
  
 }
