@@ -5,10 +5,20 @@
 }
 
 .project-heading {
-    text-align: center; /* Center the heading */
-    font-size: 2rem; /* Adjust as needed */
-    color: white; /* Adjust heading color if necessary */
-    margin: 0; /* Reset margin */
+     background-color: #1e3a8a; /* Equivalent to bg-blue-800 */
+  width: fit-content; /* Equivalent to w-fit */
+  text-align: center; /* Equivalent to text-center */
+  padding-left: 1rem; /* Equivalent to px-4 */
+  padding-right: 1rem; /* Equivalent to px-4 */
+  padding-top: 0.75rem; /* Equivalent to py-3 */
+  padding-bottom: 0.75rem; /* Equivalent to py-3 */
+  margin-left: auto; /* Equivalent to mx-auto */
+  margin-right: auto; 
+  /* Equivalent to mx-auto */
+  color: white; /* Equivalent to text-white */
+  text-transform: uppercase; /* Equivalent to uppercase */
+  transform: rotate(-6deg); /* Equivalent to -rotate-6 */
+  font-size: 1.5rem; 
 }
 
 .project-grid {
@@ -20,10 +30,19 @@
     align-items: center;  /* Equivalent to gap-12 */
 }
 
+@media (min-width: 640px) {
+  .project-heading {
+    font-size: 1.875rem; /* Equivalent to sm:text-3xl */
+  }
+}
+
 @media (min-width: 768px) { /* md breakpoint */
     .project-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
     }
+    .project-heading {
+    font-size: 2.25rem; /* Equivalent to md:text-4xl */
+  }
 }
 
 @media (min-width: 1024px) { /* lg breakpoint */

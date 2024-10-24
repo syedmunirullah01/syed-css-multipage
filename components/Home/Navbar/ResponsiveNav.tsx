@@ -3,7 +3,7 @@
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 import { useState } from "react";
-import "./ResponsiveNav.css"; // Optional: if you have specific styles for this component
+// import "./ResponsiveNav.css"; // Optional: if you have specific styles for this component
 
 const ResponsiveNav = () => {
   const [showNav, setShowNav] = useState(false);

@@ -8,7 +8,7 @@ import "./Project.css"; // Import the custom CSS
 const Project = () => {
   return (
     <div className="project-container">
-      <h2 className="project-heading">My Projects</h2>
+       <SectionHeading className="blog-heading">My Projects</SectionHeading>
       <div className="project-grid">
         {projectData.map((project, i) => {
           return (

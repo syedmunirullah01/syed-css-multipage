@@ -1,10 +1,10 @@
 .responsive-nav {
-  position: relative; /* Context for absolute positioning if needed */
+  display: flex; /* Ensure the nav components are aligned */
+  flex-direction: column; /* Stack them vertically */
 }
 
-/* Optional: Styles for the Nav component when scrolled */
-.nav {
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+@media (min-width: 640px) { /* For larger screens */
+  .responsive-nav {
+    flex-direction: row; /* Align horizontally */
+  }
 }
-
-/* Add any other specific styles for your responsive nav here */

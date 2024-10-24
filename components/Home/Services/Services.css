@@ -1,7 +1,8 @@
 .services-container {
     padding-top: 4rem; /* Equivalent to pt-16 */
     padding-bottom: 4rem; /* Equivalent to pb-16 */
-    background-color: #0f0715; /* Background color */
+    background-color: #0f0715;
+    /* Background color */
 }
 
 .services-grid {
@@ -10,7 +11,8 @@
     gap: 2.5rem; /* Equivalent to gap-10 */
     width: 80%; /* Width equivalent to w-[80%] */
     margin: 0 auto; /* Center the grid */
-    margin-top: 5rem;  /* Equivalent to mt-20 */
+    margin-top: 5rem;  
+    
 }
 
 @media (min-width: 640px) { /* sm breakpoint */

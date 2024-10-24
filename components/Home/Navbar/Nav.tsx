@@ -3,18 +3,18 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import Image from "next/image";
-import "./Nav.css"; // Import the CSS file
+import "./Nav.css"
 
 type Props = {
   openNav: () => void;
 };
 
 const Nav = ({ openNav }: Props) => {
-  const [navBg, setNavBg] = useState(false);
+  const [navBg, setnavBg] = useState(false);
 
   useEffect(() => {
     const handler = () => {
-      setNavBg(window.scrollY >= 90);
+      setnavBg(window.scrollY >= 90);
     };
 
     window.addEventListener("scroll", handler);
@@ -24,35 +24,29 @@ const Nav = ({ openNav }: Props) => {
   }, []);
 
   return (
-    <div
-      className={`nav ${navBg ? "scrolled" : "transparent"}`}
-      style={{ height: "80px" }}
-    >
-      <div className={`nav-content`}>
+    <div className={`nav ${navBg ? "bg" : ""}`}>
+      <div className="container">
         <Image
           src="/images/logo.png"
           alt="Logo"
           width={170}
-          height={60} // Adjust height here for the logo
-          className="logo"
+          height={170}
+          className="margin-left"
           priority={true}
         />
-        <div className="flex items-center">
-          <div className={`nav-links ${navBg ? "visible" : ""}`}>
+        <div className="flex-container space-x-10">
+          <div className="hidden lg-flex flex-container space-x-8">
             {navLinks.map((navlink) => (
               <Link key={navlink.id} href={navlink.url}>
-                <p className="nav-link">{navlink.label}</p>
+                <p className="nav__link">{navlink.label}</p>
               </Link>
             ))}
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center">
             <Link href="/contact">
-              <button className="hire-button">Hire Me</button>
+              <button className="custom-button">Hire Me</button>
             </Link>
-            <HiBars3BottomRight
-              onClick={openNav}
-              className="hamburger-icon lg:hidden"
-            />
+            <HiBars3BottomRight onClick={openNav} className="custom-icon" />
           </div>
         </div>
       </div>

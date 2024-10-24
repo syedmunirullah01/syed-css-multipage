@@ -4,6 +4,7 @@ import "./SectionHeading.css"; // Import the CSS file
 type Props = {
   children: ReactNode;
   className?: string;
+ 
 };
 
 const SectionHeading = ({ children, className = "" }: Props) => {
