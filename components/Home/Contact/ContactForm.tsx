@@ -4,7 +4,7 @@ import "./ContactForm.css"; // Import the custom CSS
 const ContactForm = () => {
   return (
     <div className="contact-form">
-      <h1 className="form-title">Let&apos;s Work Together</h1>
+      <h1 className="form-title text-bg">Let&apos;s Work Together</h1>
       <p className="form-description">
         Ready to collaborate or have questions? Fill out the form, and
         let&apos;s turn your ideas into reality. I&apos;m excited to connect and

@@ -14,6 +14,7 @@ const About = () => {
             data-aos="fade-right"
             data-aos-anchor-placement="top-center"
             id="aboutTitle"
+            className="text-bg"
           >
             {aboutInfo.title}
           </h1>

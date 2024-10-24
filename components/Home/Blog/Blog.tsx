@@ -2,13 +2,13 @@ import SectionHeading from "@/components/Helper/SectionHeading";
 import { blogs } from "@/Data/data";
 import React from "react";
 import BlogCard from "./BlogCard";
-import "./Blog.css"; // Import the custom CSS
+import "./Blog.css"
 
 const Blog = () => {
   return (
-    <div className="blog-container">
-      <SectionHeading className="blog-heading">Our Blog</SectionHeading>
-      <div className="blog-grid">
+    <div className="custom-container">
+      <SectionHeading>Our Blog</SectionHeading>
+      <div className="custom-grid-container">
         {blogs.map((blog, i) => {
           return (
             <div

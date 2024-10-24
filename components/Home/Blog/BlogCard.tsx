@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import "./BlogCard.css"; // Import the custom CSS
+import "./BlogCard.css"
 
 type Props = {
   blog: {
@@ -11,27 +11,25 @@ type Props = {
     image: string;
   };
 };
-
 const BlogCard = ({ blog }: Props) => {
   const { date, image, summary, title } = blog;
-
   return (
-    <div className="blog-card">
+    <div className="custom-box">
       <Image
         src={image}
         alt={title}
         width={300}
         height={300}
-        className="blog-image"
+        className="custom-image"
       />
-      <div className="p-6">
-        <p className="blog-label">News</p>
-        <h1 className="blog-title">{title}</h1>
-        <p className="blog-summary">{summary}</p>
-        <div className="blog-divider">
-          <div className="blog-footer">
-            <h1 className="blog-date">{date}</h1>
-            <button className="read-more">Read More</button>
+      <div className="custom-padding">
+        <p className="custom-badge">News</p>
+        <h1 className="custom-heading">{title}</h1>
+        <p className="custom-summary">{summary}</p>
+        <div className="custom-divider">
+          <div className="custom-flex-container ">
+            <h1 className="custom-heading1">{date}</h1>
+          <h1 className="custom-button">Read More</h1>
           </div>
         </div>
       </div>

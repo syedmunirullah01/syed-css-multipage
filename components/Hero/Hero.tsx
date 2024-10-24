@@ -16,7 +16,7 @@ const Hero = () => {
             <h1
               data-aos="fade-right"
               data-aos-delay="100"
-              className="hero-subtitle"
+              className="hero-subtitle text-bg"
             >
               {BaseInfo.position}
             </h1>

@@ -17,7 +17,7 @@ const MobileNav = ({ showNav, closeNav }: Props) => {
         <div className={`nav-content ${navClass}`}>
           {navLinks.map((navlink) => (
             <Link key={navlink.id} href={navlink.url}>
-              <p className="nav-link">{navlink.label}</p>
+              <p className="nav__link nav-link">{navlink.label}</p>
             </Link>
           ))}
           <CgClose onClick={closeNav} className="close-icon" />
