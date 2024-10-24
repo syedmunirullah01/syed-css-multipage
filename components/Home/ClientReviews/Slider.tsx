@@ -1,10 +1,9 @@
 "use client";
 import { clientReviews } from "@/Data/data";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css"; // Keep the original styles for carousel functionality
+import "react-multi-carousel/lib/styles.css"; 
 import ReviewCard from "./ReviewCard";
-import "./Slider.css"; // Import the custom CSS
-
+import "./Slider.css"; 
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1324 },

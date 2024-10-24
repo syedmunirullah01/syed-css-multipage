@@ -1,68 +1,67 @@
 .project-container {
-    padding-top: 4rem; /* Equivalent to pt-16 */
-    padding-bottom: 4rem; /* Equivalent to pb-16 */
-    background-color: #050709; /* Equivalent to bg-[#050709] */
+    padding-top: 4rem; 
+    padding-bottom: 4rem; 
+    background-color: #050709; 
 }
 
 .project-heading {
-     background-color: #1e3a8a; /* Equivalent to bg-blue-800 */
-  width: fit-content; /* Equivalent to w-fit */
-  text-align: center; /* Equivalent to text-center */
-  padding-left: 1rem; /* Equivalent to px-4 */
-  padding-right: 1rem; /* Equivalent to px-4 */
-  padding-top: 0.75rem; /* Equivalent to py-3 */
-  padding-bottom: 0.75rem; /* Equivalent to py-3 */
-  margin-left: auto; /* Equivalent to mx-auto */
+     background-color: #1e3a8a;
+  width: fit-content; 
+  text-align: center; 
+  padding-left: 1rem;
+  padding-right: 1rem; 
+  padding-top: 0.75rem; 
+  padding-bottom: 0.75rem; 
+  margin-left: auto;
   margin-right: auto; 
-  /* Equivalent to mx-auto */
-  color: white; /* Equivalent to text-white */
-  text-transform: uppercase; /* Equivalent to uppercase */
-  transform: rotate(-6deg); /* Equivalent to -rotate-6 */
+  color: white; 
+  text-transform: uppercase; 
+  transform: rotate(-6deg); 
   font-size: 1.5rem; 
 }
 
 .project-grid {
-    width: 80%; /* Equivalent to w-[80%] */
-    margin: 2rem auto; /* Equivalent to mx-auto (horizontal margin auto) and mt-20 (top margin) */
-    display: grid; /* Create a grid layout */
-    grid-template-columns: repeat(1, 1fr); /* 1 column by default */
-    gap: 3rem; /* Equivalent to gap-12 */
-    align-items: center;  /* Equivalent to gap-12 */
+    width: 80%; 
+    margin: 2rem auto; 
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 3rem; 
+    align-items: center; 
 }
 
 @media (min-width: 640px) {
   .project-heading {
-    font-size: 1.875rem; /* Equivalent to sm:text-3xl */
+    font-size: 1.875rem; 
   }
 }
 
-@media (min-width: 768px) { /* md breakpoint */
+@media (min-width: 768px) { 
     .project-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        grid-template-columns: repeat(2, 1fr); 
     }
     .project-heading {
-    font-size: 2.25rem; /* Equivalent to md:text-4xl */
+    font-size: 2.25rem; 
   }
 }
 
-@media (min-width: 1024px) { /* lg breakpoint */
+@media (min-width: 1024px) { 
     .project-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 .project-card {
-    background-color: #1e3a8a; /* Equivalent to bg-blue-950 */
-    padding: 1.5rem; /* Equivalent to p-6 */
-    border-radius: 0.5rem; /* Equivalent to rounded-lg */
-    transition: transform 0.3s; /* Transition for hover effect */
+    background-color: #1e3a8a; 
+    padding: 1.5rem; 
+    border-radius: 0.5rem; 
+    transition: transform 0.3s; 
 }
 
 .project-card:hover {
-    transform: scale(1.05); /* Equivalent to hover:scale-105 */
+    transform: scale(1.05);
 }
 
 .project-image {
-    width: 100%; /* Make the image responsive */
-    border-radius: 0.5rem; /* Optional: add rounding to the image */
+    width: 100%; 
+    border-radius: 0.5rem;
 }

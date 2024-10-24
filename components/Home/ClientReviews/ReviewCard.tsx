@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
-import "./ReviewCard.css"; // Import the custom CSS
+import "./ReviewCard.css"; 
 
 type Props = {
   review: {

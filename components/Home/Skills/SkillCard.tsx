@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import "./SkillCard.css"; // Import the custom CSS
-
+import "./SkillCard.css"; 
 type Props = {
   skill: {
     id: number;
@@ -17,7 +16,7 @@ const SkillCard = ({ skill }: Props) => {
   return (
     <div className="skill-card">
       {" "}
-      {/* Use custom class for the main container */}
+    
       <Image
         src={image}
         alt={title}
@@ -26,9 +25,9 @@ const SkillCard = ({ skill }: Props) => {
         className="skill-card__image"
       />
       <h1 className="skill-card__title">{title}</h1>{" "}
-      {/* Use custom class for title */}
+      
       <div className="skill-card__percent">{percent}</div>{" "}
-      {/* Use custom class for percent */}
+     
     </div>
   );
 };

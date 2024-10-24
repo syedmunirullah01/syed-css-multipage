@@ -2,17 +2,17 @@ import SectionHeading from "@/components/Helper/SectionHeading";
 import { skillsData } from "@/Data/data";
 import React from "react";
 import SkillCard from "./SkillCard";
-import "./Skills.css"; // Import the custom CSS
+import "./Skills.css"; 
 
 const Skills = () => {
   return (
     <div className="skills-container">
       {" "}
-      {/* Use custom class for container */}
+      
       <SectionHeading>My Skills</SectionHeading>
       <div className="skills-heading">
         {" "}
-        {/* Use custom class for the grid container */}
+        
         {skillsData.map((skill, i) => {
           return (
             <div

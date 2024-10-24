@@ -1,7 +1,7 @@
 import { contactData } from "@/Data/data";
 import React from "react";
 import { FaEnvelope, FaMap, FaPhone } from "react-icons/fa";
-import "./ContactInfo.css"; // Import the custom CSS
+import "./ContactInfo.css"; 
 
 const ContactInfo = () => {
   return (

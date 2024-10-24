@@ -1,30 +1,30 @@
 .custom-container {
-    padding-top: 4rem; /* Equivalent to pt-16 */
-    padding-bottom: 4rem; /* Equivalent to pb-16 */
-    background-color: #0f0715; /* Background color */
-    width: 100%; /* Full width */
-    margin: 0 auto; /* Center the container */
+    padding-top: 4rem; 
+    padding-bottom: 4rem; 
+    background-color: #0f0715; 
+    width: 100%; 
+    margin: 0 auto; 
 }
 
 .custom-grid-container {
-    width: 80%; /* Equivalent to w-[80%] */
-    margin: 0 auto; /* Equivalent to mx-auto */
-    margin-top: 5rem; /* Equivalent to mt-20 */
-    display: grid; /* Equivalent to grid */
-    grid-template-columns: 1fr; /* Default to 1 column */
-    gap: 3rem; /* Equivalent to gap-12 (3rem = 12 * 0.25rem) */
-    align-items: center; /* Equivalent to items-center */
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem; 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 3rem; 
+    align-items: center; 
 }
 
 /* Responsive styles */
-@media (min-width: 768px) { /* md breakpoint */
+@media (min-width: 768px) { 
     .custom-grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-@media (min-width: 1280px) { /* xl breakpoint */
+@media (min-width: 1280px) { 
     .custom-grid-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on extra-large screens */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }

@@ -1,7 +1,7 @@
 import { BaseInfo } from "@/Data/data";
 import Image from "next/image";
 import React from "react";
-import "./Hero.css"; // Import the new CSS file
+import "./Hero.css"; 
 
 const Hero = () => {
   return (

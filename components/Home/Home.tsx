@@ -11,7 +11,7 @@ import Contact from "./Contact/Contact";
 import ScrollToTop from "../Helper/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Home.css"; // Import the CSS file
+import "./Home.css"; 
 
 const Home = () => {
   useEffect(() => {
@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <div className="home-container">
       {" "}
-      {/* Use the class for styling */}
+  
       <Hero />
       <About />
       <Services />

@@ -1,34 +1,34 @@
 .footer {
-     padding-top: 4rem; /* Equivalent to pt-16 */
-    padding-bottom: 4rem; /* Equivalent to pb-16 */
-    background-color: #0f0715;/* Equivalent to bg-[#0f0715] */
+     padding-top: 4rem; 
+    padding-bottom: 4rem; 
+    background-color: #0f0715;
 }
 
 .footer img {
-    margin: 0 auto; /* Equivalent to mx-auto */
-    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto;
+    display: block; 
 }
 
 .footer-links {
-    display: flex; /* Align links horizontally */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    justify-content: center; /* Center the links */
-    gap: 2.5rem; /* Space between links */
-    color: white; /* Set link color to white */
-    font-weight: bold; /* Equivalent to font-bold */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 2.5rem; 
+    color: white; 
+    font-weight: bold; 
 }
 
 .footer-links div {
-    margin-bottom: 1rem; /* Adds vertical spacing (space-y-4) */
+    margin-bottom: 1rem; 
 }
 .footer-links a {
-    color: white; /* Set link color to white */
-    text-decoration: none; /* Remove underline from links */
+    color: white; 
+    text-decoration: none;
 }
 
 .footer-note {
-    color: white; /* Equivalent to text-white */
-    opacity: 0.6; /* Equivalent to text-opacity-60 */
-    margin-top: 1.5rem; /* Equivalent to mt-6 */
-    text-align: center; /* Equivalent to text-center */
+    color: white;
+    opacity: 0.6; 
+    margin-top: 1.5rem;
+    text-align: center; 
 }

@@ -1,88 +1,88 @@
 .custom-box {
-    background-color: #3730a3; /* Equivalent to bg-indigo-950 */
-    border-radius: 0.375rem; /* Equivalent to rounded-md */
-    overflow: hidden; /* Equivalent to overflow-hidden */
+    background-color: #3730a3; 
+    border-radius: 0.375rem; 
+    overflow: hidden; 
 }
 
 .custom-image {
-    width: 100%; /* Equivalent to w-full */
-    height: 250px; /* Equivalent to h-[250px] */
-    object-fit: cover; /* Equivalent to object-cover */
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover;
 }
 
 .custom-padding {
-    padding: 1.5rem; /* Equivalent to p-6 */
+    padding: 1.5rem;
 }
 
 .custom-badge {
-    border-radius: 0.125rem; /* Equivalent to rounded-sm */
-    padding-left: 1.5rem; /* Equivalent to px-6 */
-    padding-right: 1.5rem; /* Equivalent to px-6 */
-    padding-top: 0.375rem; /* Equivalent to py-1.5 */
-    padding-bottom: 0.375rem; /* Equivalent to py-1.5 */
-    background-color: #f43f5e; /* Equivalent to bg-rose-500 */
-    color: white; /* Equivalent to text-white */
-    width: fit-content; /* Equivalent to w-fit */
+    border-radius: 0.125rem; 
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem; 
+    padding-top: 0.375rem; 
+    padding-bottom: 0.375rem;
+    background-color: #f43f5e; 
+    color: white; 
+    width: fit-content;
 }
 
 .custom-heading {
-    font-size: 1rem; /* Equivalent to text-base */
-    cursor: pointer; /* Equivalent to cursor-pointer */
-    color: #E5E7EB; /* Equivalent to text-gray-200 */
-    line-height: 1.6rem; /* Equivalent to leading-[1.6rem] */
-    font-weight: 700; /* Equivalent to font-bold */
-    margin-top: 1.5rem; /* Equivalent to mt-6 */
-    margin-bottom: 0.5rem; /* Equivalent to mb-2 */
-    transition: color 0.2s, text-decoration 0.2s; /* Equivalent to transition-all duration-200 */
+    font-size: 1rem; 
+    cursor: pointer;
+    color: #E5E7EB;
+    line-height: 1.6rem; 
+    font-weight: 700; 
+    margin-top: 1.5rem; 
+    margin-bottom: 0.5rem;
+    transition: color 0.2s, text-decoration 0.2s; 
 }
 .custom-heading1 {
-    font-size: 0.875rem; /* Equivalent to text-sm */
-    color: white; /* Equivalent to text-white */
-    font-weight: 700; /* Equivalent to font-bold */
-    margin-top: 0.5rem; /* Equivalent to mt-2 */
+    font-size: 0.875rem; 
+    color: white; 
+    font-weight: 700; 
+    margin-top: 0.5rem; 
 }
 
 .custom-heading:hover {
-    color: #F3F4F6; /* Equivalent to hover:text-gray-100 */
-    text-decoration: underline; /* Equivalent to hover:underline */
+    color: #F3F4F6; 
+    text-decoration: underline;
 }
 .custom-summary {
-    font-size: 0.875rem; /* Equivalent to text-sm */
-    font-weight: 600; /* Equivalent to font-semibold */
-    opacity: 0.7; /* Equivalent to text-opacity-70 */
-    color: rgba(156, 163, 175, 1); /* Equivalent to text-gray-400 */
+    font-size: 0.875rem; 
+    font-weight: 600; 
+    opacity: 0.7; 
+    color: rgba(156, 163, 175, 1); 
 }
 .custom-divider {
-    margin-top: 1rem; /* Equivalent to mt-4 */
-    margin-bottom: 2rem; /* Equivalent to mb-4 */
-    width: 100%; /* Equivalent to w-full */
-    height: 1.5px; /* Equivalent to h-[1.5px] */
-    background-color: rgba(156, 163, 175, 1); /* Equivalent to bg-gray-400 */
-    opacity: 0.45; /* Equivalent to opacity-45 */
+    margin-top: 1rem; 
+    margin-bottom: 2rem; 
+    width: 100%;
+    height: 1.5px; 
+    background-color: rgba(156, 163, 175, 1); 
+    opacity: 0.45; 
 }
 .custom-flex-container {
-    display: flex; /* Equivalent to flex */
-    align-items: center; /* Equivalent to items-center */
+    display: flex; 
+    align-items: center;
     justify-content: space-between; 
     
     
-    /* Equivalent to justify-between */
+    
 }
 
 .custom-link {
-    font-size: 1rem; /* Equivalent to text-base */
-    color: white; /* Equivalent to text-white */
-    font-weight: bold; /* Equivalent to font-bold */
-    margin-top: 1rem; /* Adjusted margin above the link */ /* Underline effect */
-    transition: color 0.2s; /* Transition for hover effect */
-    cursor: pointer; /* Cursor indicates clickable text */
+    font-size: 1rem;
+    color: white; 
+    font-weight: bold; 
+    margin-top: 1rem; 
+    transition: color 0.2s; 
+    cursor: pointer; 
 }
 
 
 
 /* Responsive Styles */
-@media (min-width: 640px) { /* sm */
+@media (min-width: 640px) { 
     .custom-heading {
-        font-size: 1.125rem; /* Equivalent to sm:text-lg */
+        font-size: 1.125rem; 
     }
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import "./Footer.css"; // Import the custom CSS
+import "./Footer.css"; 
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
           alt="logo"
           width={180}
           height={180}
-          className="mx-auto" // Remove this class as we now have custom CSS
+          className="mx-auto" 
         />
       </div>
       <div className="footer-links ">

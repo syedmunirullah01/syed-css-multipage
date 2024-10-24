@@ -1,23 +1,23 @@
 .contact-container {
-    padding-top: 4rem; /* Equivalent to pt-16 */
-    padding-bottom: 4rem; /* Equivalent to pb-16 */
-    background-color: #050709; /* Equivalent to bg-[#050709] */
+    padding-top: 4rem; 
+    padding-bottom: 4rem; 
+    background-color: #050709; 
 }
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Equivalent to grid-cols-1 */
-    width: 90%; /* Equivalent to w-[90%] */
-    margin-left: auto; /* Equivalent to mx-auto */
-    margin-right: auto; /* Equivalent to mx-auto */
-    align-items: center; /* Equivalent to items-center */
-    margin-top: 2.5rem; /* Equivalent to mt-10 (2.5rem) */
-    gap: 2.5rem;/* Equivalent to gap-10 */
+    grid-template-columns: repeat(1, 1fr); 
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto; 
+    align-items: center; 
+    margin-top: 2.5rem; 
+    gap: 2.5rem;
 }
 
-@media (min-width: 1280px) { /* Equivalent to xl breakpoint */
+@media (min-width: 1280px) { 
     .contact-grid {
-        grid-template-columns: repeat(2, 1fr); /* Equivalent to xl:grid-cols-2 */
-        width: 80%; /* Equivalent to sm:w-[80%] */
+        grid-template-columns: repeat(2, 1fr); 
+        width: 80%; 
     }
 }

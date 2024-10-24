@@ -2,7 +2,7 @@
 import React from "react";
 import Project from "@/components/Home/Project/Project";
 
-const AboutPage = () => {
+const ProjectPage = () => {
   return (
     <div id="project">
       {" "}
@@ -11,4 +11,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ProjectPage;

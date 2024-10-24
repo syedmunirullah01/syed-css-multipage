@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Tilt from "react-parallax-tilt";
-import "./ServiceCard.css"; // Import the custom CSS
+import "./ServiceCard.css";
 
 type Props = {
   service: {

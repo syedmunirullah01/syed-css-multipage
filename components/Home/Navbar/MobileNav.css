@@ -1,100 +1,100 @@
-/* ResponsiveNav.css */
+
 
 .nav-open {
-  transform: translateX(0); /* Show the navigation */
-  transition: transform 0.5s ease; /* Smooth transition */
+  transform: translateX(0); 
+  transition: transform 0.5s ease; 
 }
 
 .nav-closed {
-  transform: translateX(100%); /* Hide the navigation off-screen */
-  transition: transform 0.5s ease; /* Smooth transition */
+  transform: translateX(100%); 
+  transition: transform 0.5s ease;
 }
 
 .custom-close-icon {
-  position: absolute; /* Position for the close icon */
-  top: 0.7rem; /* Adjust as needed */
-  right: 1.4rem; /* Adjust as needed */
-  width: 1.5rem; /* Example for smaller width */
-  height: 1.5rem; /* Example for smaller height */
-  color: white; /* Icon color */
-  cursor: pointer; /* Pointer cursor */
+  position: absolute; 
+  top: 0.7rem; 
+  right: 1.4rem; 
+  width: 1.5rem; 
+  height: 1.5rem; 
+  color: white; 
+  cursor: pointer; 
 }
 
-/* ResponsiveNav.css */
+
 
 .overlay {
   position: fixed;
-  inset: 0; /* Full coverage */
-  z-index: 1000; /* Above other content */
-  background-color: #0f0715; /* Background color */
-  opacity: 0.9; /* Semi-transparent */
-  transition: transform 0.5s ease; /* Smooth transition */
+  inset: 0; 
+  z-index: 1000; 
+  background-color: #0f0715; 
+  opacity: 0.9; 
+  transition: transform 0.5s ease; 
 }
 
 .nav-content {
-  color: white; /* Text color */
-  position: fixed; /* Fixed position */
-  display: flex; /* Flex layout */
-  flex-direction: column; /* Column layout */
-  justify-content: center; /* Center content */
-  align-items: flex-start; /* Align items to the start */
-  height: 100%; /* Full height */
-  width: 80%; /* Default width */
-  background-color: #040404; /* Background color for the nav content */
-  transition: transform 0.5s ease; /* Smooth transition */
-  z-index: 10000; /* Above overlay */
+  color: white; 
+  position: fixed; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: flex-start; 
+  height: 100%; 
+  width: 80%;
+  background-color: #040404;
+  transition: transform 0.5s ease;
+  z-index: 10000; 
 }
 
 .nav-content.sm {
-  width: 60%; /* Change width for small screens */
+  width: 60%; 
 }
 
 .nav-link {
-  color: white; /* Text color */
-  font-size: 20px; /* Default font size */
-  margin-left: 3rem; /* Margin left equivalent to ml-12 */
+  color: white; 
+  font-size: 20px; 
+  margin-left: 3rem; 
   border-bottom: 1px solid white;
-  /* Bottom border */
+
   padding-top: 1.5rem; 
   transition: color 0.3s;
-  /* padding-left: 1.5rem; */
-  /* Smooth color transition */
+  
+  
 }
 
 .nav-link:hover {
   color: #7947df;
-   /* Change color on hover */
+   
 }
 
-/* Responsive styles */
-@media (min-width: 640px) { /* sm */
+
+@media (min-width: 640px) { 
   .nav-link {
     font-size: 30px;
-    /* Increase font size for small screens */
+    
   }
 
   .nav-content.sm {
-    width: 60%; /* Adjust width for small screens */
+    width: 60%; 
   }
   .close-icon {
-    width: 2rem; /* Width (8) for small screens */
-    height: 2rem; /* Height (8) for small screens */
+    width: 2rem;
+    height: 2rem; 
   }
 }
-/* ResponsiveNav.css */
 
-/* Close Icon styles */
+
+
 .close-icon {
-  position: absolute; /* Positioning */
-  top: 2rem; /* Top offset */
-  right: 1.4rem; /* Right offset */
-  width: 1.5rem; /* Default width (6) */
-  height: 1.5rem; /* Default height (6) */
+  position: absolute;
+  top: 2rem;
+  right: 1.4rem; 
+  width: 1.5rem; 
+  height: 1.5rem; 
   color: white; 
-  /* Icon color */
+  
 }
 
-/* Responsive styles */
+
 
 
 

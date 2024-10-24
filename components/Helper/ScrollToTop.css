@@ -1,33 +1,31 @@
-/* ScrollToTop.css */
 
-/* Container for positioning the button */
 .fixed-bottom-right {
   position: fixed;
-  bottom: 1rem; /* 4 units of spacing (16px) */
-  right: 1rem; /* 4 units of spacing (16px) */
-  z-index: 1000; /* Ensure it's on top of other elements */
+  bottom: 1rem; 
+  right: 1rem; 
+  z-index: 1000; 
 }
 
 /* Button styling */
 .custom-scroll-button {
-  background-color: #1e3a8a; /* Corresponds to Tailwind bg-blue-900 */
+  background-color: #1e3a8a; 
   color: white;
-  border-radius: 50%; /* Makes the button circular */
-  width: 3rem; /* 12 units of width (48px) */
-  height: 3rem; /* 12 units of height (48px) */
+  border-radius: 50%; 
+  width: 3rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  outline: none; /* Remove focus outline */
+  outline: none; 
 }
 
-/* Hover or active state can be added if needed */
+
 .custom-scroll-button:hover {
-  background-color: #2b519e; /* A lighter shade on hover */
+  background-color: #2b519e;
 }
 
-/* Optional pulse animation */
+
 @keyframes pulse {
   0% {
     transform: scale(1);

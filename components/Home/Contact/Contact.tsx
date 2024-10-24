@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import ContactInfo from "./ContactInfo";
-import "./Contact.css"; // Import the custom CSS
+import "./Contact.css"; 
 
 const Contact = () => {
   return (

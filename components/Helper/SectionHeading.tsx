@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import "./SectionHeading.css"; // Import the CSS file
+import "./SectionHeading.css"; 
 
 type Props = {
   children: ReactNode;

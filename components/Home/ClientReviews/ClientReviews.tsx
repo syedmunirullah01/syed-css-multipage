@@ -1,7 +1,7 @@
 import SectionHeading from "@/components/Helper/SectionHeading";
 import React from "react";
 import dynamic from "next/dynamic";
-import "./ClientReviews.css"; // Import the custom CSS
+import "./ClientReviews.css"; 
 
 // Dynamically import the Slider component with SSR disabled
 const Slider = dynamic(() => import("./Slider"), { ssr: false });

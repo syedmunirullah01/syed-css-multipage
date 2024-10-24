@@ -1,147 +1,146 @@
 #aboutContainer {
-    padding-top: 4rem;    /* Equivalent to pt-16 (64px) */
-    padding-bottom: 4rem; /* Equivalent to pb-16 (64px) */
-    background-color: #050709; /* Equivalent to bg-[#050709] */
+    padding-top: 4rem;    
+    padding-bottom: 4rem; 
+    background-color: #050709; 
 }
 
 #aboutGridContainer {
-    width: 80%;                     /* Equivalent to w-[80%] */
-    margin-left: auto;              /* Equivalent to mx-auto */
-    margin-right: auto;             /* Equivalent to mx-auto */
-    display: grid;                  /* Equivalent to grid */
-    grid-template-columns: 1fr;     /* Equivalent to grid-cols-1 */
-    gap: 2rem;                      /* Equivalent to gap-8 (32px) */
-    margin-top: 5rem;               /* Equivalent to mt-20 (80px) */
-    align-items: center;            /* Equivalent to items-center */
+    width: 80%;                     
+    margin-left: auto;              
+    margin-right: auto;             
+    display: grid;                  
+    grid-template-columns: 1fr;     
+    gap: 2rem;                      
+    margin-top: 5rem;               
+    align-items: center;            
 }
 
 #aboutTitle {
-    background-color: transparent; /* Equivalent to text-bg */
-    font-size: 26px;               /* Equivalent to text-[26px] */
-    color: #E5E7EB;                /* Equivalent to text-gray-200 */
-    font-weight: 600;               /* Equivalent to text-gray-200 */
+    background-color: transparent; 
+    font-size: 26px;               
+    color: #E5E7EB;                
+    font-weight: 600;              
 }
 
 #aboutDescription {
-    margin-top: 1.5rem;          /* Equivalent to mt-6 (24px) */
-    font-size: 1rem;             /* Equivalent to text-base (16px) */
-    color: #6B7280;              /* Equivalent to text-gray-500 */
+    margin-top: 1.5rem;          
+    font-size: 1rem;             
+    color: #6B7280;              
 }
 
 #skillContainer {
-    margin-top: 2rem; /* Equivalent to mt-8 (32px) */
+    margin-top: 2rem; 
 }
 
 .skill {
-    display: flex;                  /* Equivalent to flex */
-    align-items: center;           /* Equivalent to items-center */
-    margin-bottom: 1.5rem;         /* Equivalent to mb-6 (24px) */
-    gap: 0.5rem;                   /* Equivalent to space-x-2 (8px) */
+    display: flex;               
+    align-items: center;           
+    margin-bottom: 1.5rem;         
+    gap: 0.5rem;                  
 }
 
 .skillBox {
-    width: 1.75rem;                /* Equivalent to w-7 (28px) */
-    height: 1.75rem;               /* Equivalent to h-7 (28px) */
-    display: flex;                 /* Equivalent to flex */
-    flex-direction: column;        /* Equivalent to flex-col */
-    align-items: center;           /* Equivalent to items-center */
-    justify-content: center;       /* Equivalent to justify-center */
+    width: 1.75rem;               
+    height: 1.75rem;               
+    display: flex;                
+    flex-direction: column;        
+    align-items: center;          
+    justify-content: center;      
 }
 
 .skillBoxBlue {
-    background-color: #1E3A8A;    /* Equivalent to bg-blue-800 */
+    background-color: #1E3A8A;    
 }
-
 .skillBoxOrange {
-    background-color: #F97316;     /* Equivalent to bg-orange-600 */
+    background-color: #F97316;   
 }
 
 .skillBoxGreen {
-    background-color: #22C55E;     /* Equivalent to bg-green-500 */
+    background-color: #22C55E;    
 }
 
 .skillText {
-    font-size: 0.875rem; /* Equivalent to text-sm (14px) */
-    font-weight: 700;    /* Equivalent to font-bold */
-    color: #D1D5DB;      /* Equivalent to text-gray-300 */
+    font-size: 0.875rem; 
+    font-weight: 700;    
+    color: #D1D5DB;      
 }
 
 #statisticsContainer {
-    display: grid;               /* Equivalent to grid */
-    grid-template-columns: repeat(2, 1fr); /* Equivalent to grid-cols-2 */
-    gap: 4rem;                  /* Equivalent to gap-16 (64px) */
-    align-items: center;        /* Equivalent to items-center */
+    display: grid;              
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;                 
+    align-items: center;        
 }
 
 #statistic {
     display: flex;
     flex-direction: column;
-    align-items: center;         /* Center content */
+    align-items: center;         
 }
 
 .statisticImage {
-    width: 80px;                /* Custom image width */
-    height: 80px;               /* Custom image height */
-    margin-bottom: 0.75rem;     /* Equivalent to mt-3 (12px) */
+    width: 80px;                
+    height: 80px;              
+    margin-bottom: 0.75rem;     
 }
 
 .statisticText {
-    font-weight: bold;          /* Equivalent to font-bold */
-    font-size: 1.25rem;         /* Equivalent to text-xl (20px) */
-    color: white;               /* Equivalent to text-white */
-    text-align: center;         /* Equivalent to text-center */
+    font-weight: bold;         
+    font-size: 1.25rem;         
+    color: white;              
+    text-align: center;         
 }
 
 .statisticSubText {
-    font-size: 1rem;            /* Equivalent to text-base (16px) */
-    color: #9CA3AF;             /* Equivalent to text-gray-400 */
-    text-align: center;         /* Equivalent to text-center */
+    font-size: 1rem;            
+    color: #9CA3AF;             
+    text-align: center;         
 }
 .responsiveText {
-    font-size: 1rem;            /* Default size (text-base) */
+    font-size: 1rem;            
 }
 
-@media (min-width: 640px) {  /* sm */
+@media (min-width: 640px) {  
     .responsiveText {
-        font-size: 1.125rem;    /* Equivalent to text-lg (18px) */
+        font-size: 1.125rem;    
     }
 }
 
 /* Responsive styles */
-@media (min-width: 640px) { /* sm */
+@media (min-width: 640px) { 
     #aboutTitle {
-        font-size: 1.875rem;       /* Equivalent to sm:text-3xl (30px) */
+        font-size: 1.875rem;      
     }
     #aboutDescription {
-        font-size: 1.125rem;   /* Equivalent to text-lg (18px) */
+        font-size: 1.125rem; 
     }
 }
 
-@media (min-width: 768px) { /* md */
+@media (min-width: 768px) { 
     #aboutTitle {
-        font-size: 2rem;       /* Equivalent to md:text-4xl (32px) */
+        font-size: 2rem;       
     }
     #aboutDescription {
-        font-size: 1.125rem;   /* Equivalent to text-lg (18px) */
+        font-size: 1.125rem;  
     }
 }
 
-@media (min-width: 1024px) { /* lg */
+@media (min-width: 1024px) { 
     #aboutTitle {
-        font-size: 2.5rem;       /* Equivalent to lg:text-5xl (40px) */
+        font-size: 2.5rem;       
     }
     #aboutGridContainer {
-        grid-template-columns: repeat(2, 1fr); /* Equivalent to lg:grid-cols-2 */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
     .skillText {
-        font-size: 1rem;   /* Equivalent to sm:text-base (16px) */
+        font-size: 1rem;   
     }
 
 
-@media (min-width: 768px) { /* md */
+@media (min-width: 768px) { 
     .skillText {
-        font-size: 1.125rem; /* Equivalent to md:text-lg (18px) */
+        font-size: 1.125rem; 
     }
 }

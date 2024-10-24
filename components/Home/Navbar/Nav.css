@@ -1,58 +1,58 @@
-/* styles.css */
+
 .nav {
   position: fixed;
   height: 12vh;
   z-index: 10;
   width: 100%;
-  background-color: transparent; /* Default background */
+  background-color: transparent; 
   transition: background-color 0.3s;
   
 
-   /* Optional for smooth transition */
+   
 }
 
 .nav.bg {
-  background-color: #240b39; /* Background color when navBg is true */
+  background-color: #240b39; 
 }
-/* styles.css */
+
 .container {
   display: flex;
-  align-items: center; /* Equivalent to 'items-center' */
-  height: 100%; /* Equivalent to 'h-full' */
-  justify-content: space-between; /* Equivalent to 'justify-between' */
-  width: 100%; /* Equivalent to 'w-full' */
-  padding-left: 1rem; /* Equivalent to 'px-4' */
-  padding-right: 1rem; /* Equivalent to 'px-4' */
-  margin: 0 auto; /* Equivalent to 'mx-auto' */
+  align-items: center;
+  height: 100%;
+  justify-content: space-between; 
+  width: 100%; 
+  padding-left: 1rem; 
+  padding-right: 1rem; 
+  margin: 0 auto;
 }
 .margin-left {
-  margin-left: -1.5rem; /* Equivalent to 'ml-[-1.5rem]' */
+  margin-left: -1.5rem; 
 }
 
 .flex-container {
-  display: flex; /* Equivalent to 'flex' */
-  align-items: center; /* Equivalent to 'items-center' */
+  display: flex; 
+  align-items: center; 
 }
 
 .space-x-10 > * + * {
-  margin-left: 2.5rem; /* Equivalent to 'space-x-10' (10 * 0.625rem = 2.5rem) */
+  margin-left: 2.5rem; 
 }
 
 .hidden {
-  display: none; /* Equivalent to 'hidden' */
+  display: none; 
 }
 
 .space-x-8 > * + * {
-  margin-left: 2rem; /* Equivalent to 'space-x-8' (8 * 0.25rem = 2rem) */
+  margin-left: 2rem;
 }
 
 .nav__link {
   transition: color 0.3s;
-  text-decoration: none; /* Equivalent to 'transition-colors' */
+  text-decoration: none; 
 }
 
 .nav__link:hover {
-  color: #7947df; /* Equivalent to 'hover:text-[#7947df]' */
+  color: #7947df; 
 }
 
 a{
@@ -60,75 +60,74 @@ a{
 }
 
 .flex {
-  display: flex; /* Equivalent to 'flex' */
+  display: flex; 
 }
 
 .items-center {
-  align-items: center; /* Equivalent to 'items-center' */
+  align-items: center;
 }
 
 .space-x-4 > * + * {
-  margin-left: 1rem; /* Equivalent to 'space-x-4' (1rem = 4 units in Tailwind) */
+  margin-left: 1rem; 
 }
 .custom-button {
     margin-right: 1rem;
-  padding: 0.5rem 1rem; /* px-4 py-2 */
-  color: #1e40af; /* text-blue-800 */
-  font-weight: 600; /* font-semibold */
-  font-size: 0.75rem; /* text-xs */
-  background-color: #ffffff; /* bg-white */
-  border-radius: 0.5rem; /* rounded-lg */
-  white-space: nowrap; /* whitespace-nowrap */
-  transition: all 0.2s; /* transition-all duration-200 */
+  padding: 0.5rem 1rem; 
+  color: #1e40af; 
+  font-weight: 600; 
+  font-size: 0.75rem; 
+  background-color: #ffffff;
+  border-radius: 0.5rem; 
+  white-space: nowrap; 
+  transition: all 0.2s;
 }
 
 .custom-button:hover {
-  background-color: #e5e7eb; /* hover:bg-gray-200 */
+  background-color: #e5e7eb; 
 }
-.custom-icon {
-  width: 2rem; /* w-8 */
-  height: 2rem; /* h-8 */
-  color: white; /* text-white */
+.custom-icon{
+  width: 2rem;
+  height: 2rem; 
+  color: white; 
   cursor: pointer; 
+ 
 
 }
 /* Respons
 ive styles */
-@media (min-width: 640px) { /* sm */
+@media (min-width: 640px) { 
   .container {
-    padding-left: 2.5rem; /* Equivalent to 'sm:px-10' */
-    padding-right: 2.5rem; /* Equivalent to 'sm:px-10' */
+    padding-left: 2.5rem; 
+    padding-right: 2.5rem; 
   }
   .margin-left {
-    margin-left: 0; /* Equivalent to 'sm:ml-0' */
+    margin-left: 0; 
   }
    .lg-flex {
-    display: flex; /* Equivalent to 'lg:flex' */
+    display: flex; 
   }
    .custom-button {
-    font-size: 0.875rem; /* sm:text-sm */
+    font-size: 0.875rem; 
   }
 }
 
-@media (min-width: 768px) { /* md */
+@media (min-width: 768px) { 
   .custom-button {
-    font-size: 1rem; /* md:text-base */
+    font-size: 1rem; 
   }
 }
 
 
-@media (min-width: 1024px) { /* lg */
-  .container {
-    padding-left: 0; /* Equivalent to 'lg:px-0' */
-    padding-right: 0; /* Equivalent to 'lg:px-0' */
-  }
-  .custom-icon {
+@media (min-width: 1024px) {
+  .container .custom-icon {
     display: none;
   }
 }
 
-@media (min-width: 1280px) { /* xl */
+
+@media (min-width: 1280px) { 
   .container {
-    width: 80%; /* Equivalent to 'xl:w-[80%]' */
+    width: 80%; 
   }
+  
 }
