@@ -22,12 +22,12 @@
     width: 3rem; 
     height: 3rem; 
     border-radius: 9999px; 
-    background: linear-gradient(to right, #34d399, #0f766e); 
+    background: #949395; 
     transition: background 0.3s ease, transform 0.3s ease; 
 }
 
 .contact-info__icon:hover {
-    background: linear-gradient(to right, #2cae82, #0c6f55); 
+    background: #1e1e1f; 
     transform: scale(1.1); 
 }
 
